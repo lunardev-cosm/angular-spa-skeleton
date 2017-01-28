@@ -1,0 +1,26 @@
+{
+  "name": "angular-spa-skeleton",
+  "authors": [
+    "Michael <job.lunardev@yandex.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/packages",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.7",
+    "angular-ui-router": "0.2.11",
+    "oclazyload": "1.0.6"
+  },
+  "resolutions": {
+    "angular": "1.4.7"
+  }
+}

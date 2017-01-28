@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html data-ng-app="defaultApplication">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Angular SPA Skeleton">
+    <meta name="author" content="lunardev-gh">
+
+    <base href="/">
+
+    <title data-head-title></title>
+
+    <link rel="stylesheet" type="text/css" href="/style/base.css"/>
+
+    <script src="/packages/angular/angular.min.js"></script>
+    <script src="/plugins/script/script.js"></script>
+    <script src="/packages/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/packages/oclazyload/dist/ocLazyLoad.min.js"></script>
+
+    <script src="/applications/default-application/__app/__app.js"></script>
+
+    <script src="/applications/default-application/__app/providers/modulesRegistrator.js"></script>
+    <script src="/applications/default-application/__app/providers/routesRegistrator.js"></script>
+    <script src="/applications/default-application/__app/config.js"></script>
+
+    <script src="/applications/default-application/__app/controllers/base.js"></script>
+
+
+    <script>
+        angular.module('defaultApplication').value('applicationValues', {
+            //
+        });
+    </script>
+
+</head>
+
+<body data-ng-controller="BaseCtrl">
+
+<div class="center">
+    <a href="/">Главная</a>
+    <a href="/order/list">Заказы</a>
+</div>
+
+<div data-ui-view=""></div>
+
+</body>
+</html>
